@@ -1,38 +1,214 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  padding: 0px 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav__logo{
+  max-width: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section{
+  padding: 30px 20px;
+}
+
+.hero__section{
   display: flex;
   flex-direction: column;
+  gap: 16px;
+}
+
+.hero__section img{
+  max-width: 640px;
+  align-self: center;
+}
+
+.hero__section h1{
+  font-size: 48px;
+}
+
+.hero__section p{
+  font-size: 20px;
+  max-width: 380px;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  width: 230px;
+}
+
+.card__person{
+  width: 100%;
+  border-radius: 9px;
+}
+
+.card__container{
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  background-color: #F3F3F3;
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.card__info{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #555;
+  font-size: 17px;
+}
+
+.para__card{
+  font-size: 17px;
+  color: #333;
+}
+
+.card__info span:nth-child(2){
+  color: #000;
+  font-weight: 600;
+}
+
+.imagen{
+  position: relative;
+}
+
+.upside__button{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: #fff;
+  width: 85px;
+  height: 28px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 14px;
+  border-radius: 4px;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 700px) {
+  .nav__logo{
+    max-width: 90px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  section{
+    padding: 25px 15px;
+  }
+  
+  .hero__section{
+    gap: 14px;
+  }
+  
+  .hero__section img{
+    max-width: 560px;
+  }
+  
+  .hero__section h1{
+    font-size: 36px;
+  }
+  
+  .hero__section p{
+    font-size: 18px;
+    max-width: 280px;
+    letter-spacing: 0.5px;
+  }
+  
+  .card{
+    gap: 4px;
+    width: 210px;
+  }
+  
+  .card__person{
+    width: 100%;
+  }
+  
+  .card__container{
+    gap: 12px;
+  }
+  
+  .card__info{
+    gap: 4px;
+    font-size: 15px;
+  }
+  
+  .para__card{
+    font-size: 15px;
+  }
+  
+  .upside__button{
+    width: 80px;
+    height: 22px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav__logo{
+    max-width: 85px;
+  }
+  
+  section{
+    padding: 20px 10px;
+  }
+  
+  .hero__section{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .hero__section img{
+    max-width: 460px;
+    align-self: center;
+  }
+  
+  .hero__section h1{
+    font-size: 26px;
+  }
+  
+  .hero__section p{
+    font-size: 13px;
+    max-width: 220px;
+    letter-spacing: 0.3px;
+  }
+  
+  .card{
+    gap: 4px;
+    width: 180px;
+  }
+  
+  .card__container{
+    gap: 8px;  
+  }
+  
+  .card__info{
+    gap: 4px;
+    font-size: 13px;
+  }
+  
+  .para__card{
+    font-size: 13px;
+  }
+   
+  .upside__button{
+    left: 8px;
+    top: 8px;
+    width: 70px;
+    height: 20px;
+    font-size: 10px;
   }
 }
